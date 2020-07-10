@@ -5,9 +5,8 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   // you can create a function named generatePassword that creates the password
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-
+//  var passwordText = document.querySelector("#password");
+//  passwordText.value = password;
 }
 
 // Numbers 0123456789
@@ -55,11 +54,11 @@ function generatePassword() {
             console.log(randoArray)
           }
           var i = 0
-              do {password =  password + randoArray[Math.floor(Math.random() * randoArray.length)]
+              do {passwordResp =  password + randoArray[Math.floor(Math.random() * randoArray.length)]
                 console.log(password);
                 i++;
               }
               while (i < passCharNum);}
             
-              alert(password)
+              alert(passwordResp)
             }
